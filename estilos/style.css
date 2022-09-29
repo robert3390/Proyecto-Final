@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: roboto, sans-serif;
@@ -107,8 +111,258 @@ header a:hover{
 
 #nuestros-cursos h2{
     margin-top: 0;
+    font-size: 3.2em;
 }
 
 #nuestros-cursos p{
     display: none
+}
+
+#nuestros-cursos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image:linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url("../imagenes/pasteleria.jpg")
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url("../imagenes/nutricion.jpg")
+}
+
+.carta:nth-child(3){
+    background-image:linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url("../imagenes/panaderia.jpg")
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#final h2{
+    font-size: 9vh;
+}
+
+#final button{
+    font-size: 5vh;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.redes-sociales-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.icono-redsocial{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-image: url(../imagenes/facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.icono-redsocial:hover{
+    background-color: white;
+    filter: invert(1);
+}
+
+.icono-redsocial:first-child{
+    background-image: url(../imagenes/instagram.png);
+}
+
+.icono-redsocial:nth-child(2){
+    background-image: url(../imagenes/twitter.png);
+}
+
+.icono-redsocial:nth-child(3){
+    background-image: url(../imagenes/youtube.png);
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: black;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: blueviolet;
+    text-align: center;
+}
+
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 20px;
+    }
+
+    #somos-atelierculinario .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-atelierculinario .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    #somos-atelierculinario .img-container{
+        background-image: url(../imagenes/chef-nosotros.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-cursos .cursos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-cursos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-cursos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-cursos .carta{
+        padding: 50px;
+    }
+
+
+    #caracteristicas{
+        background-image: url(../imagenes/caracteristicas.jpg);
+        
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+        color: white;
+        text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+
+    }
+
+    /*Formulario de contacto*/
+
+form{
+    width: 450px;
+    margin: auto;
+    background-image: url(../imagenes/fondo3.jpg);
+    background-position: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+       
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+#Boton{
+    background:blueviolet;
+    color: white;
+    padding: 20px;
+}
 }
