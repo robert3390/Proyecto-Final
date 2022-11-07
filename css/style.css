@@ -1,171 +1,138 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: roboto, sans-serif;
-}
+  font-family: roboto, sans-serif; }
 
 h1 {
-  font-size: 3.5em;
-}
+  font-size: 3.5em; }
 
 h2 {
-  font-size: 2.7em;
-}
+  font-size: 2.7em; }
 
 h3 {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
 p {
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 li {
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
 
 button {
   font-size: 1.25em;
   font-weight: bold;
   padding: 10px 30px;
-  border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: white;
-  background-color: blueviolet;
-}
-button:hover {
-  background-color: rgb(75, 25, 122);
-}
+  background-color: blueviolet; }
+  button:hover {
+    background-color: #4b197a; }
 
 .container {
   max-width: 1400px;
-  margin: auto;
-}
+  margin: auto; }
 
 .color-titulo {
-  color: blueviolet;
-}
+  color: blueviolet; }
 
 header {
-  background-color: rgb(245, 245, 245);
-}
-header .logo {
-  margin: 0;
-  padding: 25px 30px;
-  text-align: center;
-}
-header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 25px;
-}
-header a {
-  padding: 5px 12px;
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-header a:hover {
-  color: blueviolet;
-}
+  background-color: whitesmoke; }
+  header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    text-align: center; }
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; }
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; }
+    header a:hover {
+      color: blueviolet; }
 
 #hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 90vh;
   color: white;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-}
+  background-position: center center; }
 
 #somos-atelierculinario .container {
   text-align: center;
-  padding: 200px 12px;
-}
+  padding: 200px 12px; }
 
 #nuestros-cursos {
-  background-color: rgb(30, 30, 30);
+  background-color: #1e1e1e;
   color: aliceblue;
-  text-align: center;
-}
-#nuestros-cursos .container {
-  padding: 150px 12px;
-}
-#nuestros-cursos h2 {
-  margin-top: 0;
-  font-size: 3.2em;
-}
-#nuestros-cursos p {
-  display: none;
-}
-#nuestros-cursos .carta {
-  background-position: center center;
-  background-size: cover;
-  padding: 50px;
-  margin: 20px;
-  border-radius: 15px;
-}
-#nuestros-cursos .carta:nth-child(1) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/pasteleria.jpg");
-}
-#nuestros-cursos .carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/nutricion.jpg");
-}
-#nuestros-cursos .carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/panaderia.jpg");
-}
+  text-align: center; }
+  #nuestros-cursos .container {
+    padding: 150px 12px; }
+  #nuestros-cursos h2 {
+    margin-top: 0;
+    font-size: 3.2em; }
+  #nuestros-cursos p {
+    display: none; }
+  #nuestros-cursos .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px; }
+    #nuestros-cursos .carta:nth-child(1) {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/pasteleria.jpg"); }
+    #nuestros-cursos .carta:nth-child(2) {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/nutricion.jpg"); }
+    #nuestros-cursos .carta:nth-child(3) {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/panaderia.jpg"); }
 
 #caracteristicas .container {
   text-align: center;
-  padding: 250px 12px;
-}
+  padding: 250px 12px; }
+
 #caracteristicas li {
   margin: 16px 0px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 #final {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 90vh;
   color: white;
-  background-color: rgb(30, 30, 30);
+  background-color: #1e1e1e;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-}
-#final h2 {
-  font-size: 9vh;
-}
-#final button {
-  font-size: 5vh;
-}
+  background-position: center center; }
+  #final h2 {
+    font-size: 9vh; }
+  #final button {
+    font-size: 5vh; }
 
 /*Footer*/
 footer {
@@ -176,35 +143,30 @@ footer {
   padding: 2rem 8%;
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-footer .redes-sociales-container {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-footer .footer-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-  list-style-type: none;
-  color: black;
-  font-size: 18px;
-}
-footer .footer-menu-container .menu-item {
-  margin: 1rem 1.5rem;
-  cursor: pointer;
-  opacity: 0.6;
-}
-footer .footer-menu-container .menu-item:hover {
-  opacity: 1;
-}
+  align-items: center; }
+  footer .redes-sociales-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem; }
+  footer .footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    list-style-type: none;
+    color: black;
+    font-size: 18px; }
+    footer .footer-menu-container .menu-item {
+      margin: 1rem 1.5rem;
+      cursor: pointer;
+      opacity: 0.6; }
+      footer .footer-menu-container .menu-item:hover {
+        opacity: 1; }
 
 .icono-redsocial {
   height: 50px;
@@ -215,25 +177,19 @@ footer .footer-menu-container .menu-item:hover {
   background-position: center;
   background-size: 40%;
   background-repeat: no-repeat;
-  margin: 1rem;
-}
-.icono-redsocial:hover {
-  background-color: white;
-  filter: invert(1);
-}
-.icono-redsocial:nth-child(1) {
-  background-image: url(../imagenes/instagram.png);
-}
-.icono-redsocial:nth-child(2) {
-  background-image: url(../imagenes/twitter.png);
-}
-.icono-redsocial:nth-child(3) {
-  background-image: url(../imagenes/youtube.png);
-}
-.icono-redsocial .copyright {
-  color: blueviolet;
-  text-align: center;
-}
+  margin: 1rem; }
+  .icono-redsocial:hover {
+    background-color: white;
+    filter: invert(1); }
+  .icono-redsocial:nth-child(1) {
+    background-image: url(../imagenes/instagram.png); }
+  .icono-redsocial:nth-child(2) {
+    background-image: url(../imagenes/twitter.png); }
+  .icono-redsocial:nth-child(3) {
+    background-image: url(../imagenes/youtube.png); }
+  .icono-redsocial .copyright {
+    color: blueviolet;
+    text-align: center; }
 
 form {
   width: 300px;
@@ -244,51 +200,42 @@ form {
   box-sizing: border-box;
   margin-top: 30px;
   border-radius: 7px;
-  margin-bottom: 30px;
-}
-form h3 {
-  color: white;
-  text-align: center;
-  margin: 0%;
-  font-size: 30px;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
-}
-form input, form textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 17px;
-  border: none;
-}
-form #Boton {
-  background: blueviolet;
-  color: white;
-  padding: 20px;
-}
-form #Boton:hover {
-  background-color: rgb(75, 25, 122);
-}
+  margin-bottom: 30px; }
+  form h3 {
+    color: white;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none; }
+  form #Boton {
+    background: blueviolet;
+    color: white;
+    padding: 20px; }
+    form #Boton:hover {
+      background-color: #4b197a; }
 
 @media (min-width: 720px) {
   header {
     position: fixed;
-    width: 100%;
-  }
+    width: 100%; }
   header .container {
     flex-direction: row;
-    justify-content: space-between;
-  }
+    justify-content: space-between; }
   header nav {
     flex-direction: row;
     padding: 0;
-    padding-right: 20px;
-  }
+    padding-right: 20px; }
   #somos-atelierculinario .container {
     display: flex;
-    justify-content: space-evenly;
-  }
+    justify-content: space-evenly; }
   #somos-atelierculinario .texto {
     width: 50%;
     max-width: 600px;
@@ -296,40 +243,31 @@ form #Boton:hover {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
+    justify-content: center; }
   #somos-atelierculinario .img-container {
     background-image: url(../imagenes/chef-nosotros.jpg);
     background-size: cover;
     background-position: center center;
     height: 500px;
-    width: 400px;
-  }
+    width: 400px; }
   #nuestros-cursos .cursos {
     display: flex;
-    justify-content: center;
-  }
+    justify-content: center; }
   #nuestros-cursos p {
     display: block;
-    margin-bottom: 30px;
-  }
+    margin-bottom: 30px; }
   #nuestros-cursos h3 {
-    margin-top: 0;
-  }
+    margin-top: 0; }
   #nuestros-cursos .carta {
-    padding: 50px;
-  }
+    padding: 40px; }
   #caracteristicas {
-    background-image: url(../imagenes/caracteristicas.jpg);
-  }
+    background-image: url(../imagenes/caracteristicas.jpg); }
   #caracteristicas .container {
-    text-align: initial;
-  }
+    text-align: initial; }
   #caracteristicas ul {
     margin-left: 100px;
     color: white;
-    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
-  }
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
   /*Formulario de contacto*/
   form {
     width: 450px;
@@ -340,32 +278,24 @@ form #Boton:hover {
     box-sizing: border-box;
     margin-top: 30px;
     border-radius: 7px;
-    margin-bottom: 30px;
-  }
+    margin-bottom: 30px; }
   h3 {
     color: white;
     text-align: center;
     margin: 0%;
     font-size: 30px;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
-  }
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
   input, textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
     font-size: 17px;
-    border: none;
-  }
+    border: none; }
   #Boton {
     background: blueviolet;
     color: white;
-    padding: 20px;
-  }
-  #Boton:hover {
-    background-color: rgb(75, 25, 122);
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+    padding: 20px; }
+    #Boton:hover {
+      background-color: #4b197a; } }

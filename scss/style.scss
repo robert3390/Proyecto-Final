@@ -1,34 +1,19 @@
-*{
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    margin: 0;
-    font-family: roboto, sans-serif;
-}
-
-h1 {font-size: 3.5em;}
-h2 {font-size: 2.7em;}
-h3 {font-size: 2em;}
-p {font-size: 1.25em;}
-ul {list-style: none;}
-li {font-size: 1.25em;}
-
+@import 'variables';
+@import 'basicos';
+@import '_mixin';
 
 button{
-    font-size: 1.25em;
-    font-weight: bold;
+    font: {
+        size: 1.25em;
+        weight: bold;
+    }
     padding: 10px 30px;
-    border-radius: 5px;
     border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-    background-color: blueviolet;
-    &:hover{background-color: rgb(75, 25, 122);}
+    color:white;
+    background-color: $primario;
+    &:hover{background-color: $colorclick ;}
 }
 
 .container{
@@ -37,7 +22,7 @@ button{
 }
 
 .color-titulo{
-    color: blueviolet;
+    color: $primario;
 }
 
 header{
@@ -49,13 +34,11 @@ header{
         text-align: center;
     }
     .container{
-        display: flex;
-        flex-direction: column;
+        @include flex;
         align-items: center;
     }
     nav {
-        display: flex;
-        flex-direction: column;
+        @include flex;
         text-align: center;
         padding-bottom: 25px;
     }
@@ -64,34 +47,32 @@ header{
         text-decoration: none;
         font-weight: bold;
         color: black;
-        &:hover{color: blueviolet;}
+        &:hover{color: $primario;}
     }
 }
 
 #hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
+    @include alignjustify;
     text-align: center;
-    flex-direction: column;
     height: 90vh;
     color: white;
-    background-image:linear-gradient(0deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)),url("../imagenes/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: {
+        image:$degradado;
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+    }
 }
 
 #somos-atelierculinario{
     .container{
-    text-align: center;
-    padding: 200px 12px;}
+        text-align: center;
+        padding: 200px 12px;}
 }
 
 #nuestros-cursos{
-    background-color: rgb(30, 30, 30);
+    background-color: $negro30;
     color: aliceblue;
     text-align: center;
 
@@ -106,20 +87,16 @@ header{
         display: none
     }
     .carta{
-        background-position: center center;
-        background-size: cover;
+        background: {
+            position: center center;
+            size: cover;
+        }
         padding: 50px;
         margin: 20px;
         border-radius: 15px;
-        &:nth-child(1){background-image:linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),url("../imagenes/pasteleria.jpg")}
-        &:nth-child(2){background-image:linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),url("../imagenes/nutricion.jpg")}
-        &:nth-child(3){background-image:linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),url("../imagenes/panaderia.jpg")}
+        &:nth-child(1){background-image: $pasteleria}
+        &:nth-child(2){background-image: $nutricion}
+        &:nth-child(3){background-image: $panaderia}
     }
 }
 
@@ -134,17 +111,18 @@ header{
 } 
 
 #final{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
+    @include alignjustify;
     text-align: center;
-    flex-direction: column;
     height: 90vh;
     color: white;
-    background-color: rgb(30, 30, 30);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: {
+        color: $negro30;
+        repeat:no-repeat;
+        size: cover;
+        position: center center;
+    };
+    
     h2{
         font-size: 9vh;
     }
@@ -161,22 +139,18 @@ footer{
     left: 0;
     padding: 2rem 8%;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex;
+    @include alignjustify;
 
     .redes-sociales-container{ 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include alignjustify;
         flex-wrap: wrap;
         margin-bottom: 1rem;
     }
     .footer-menu-container{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include alignjustify;
         flex-wrap: wrap;
         margin-bottom: 1rem;
         list-style-type: none;
@@ -197,10 +171,12 @@ footer{
     width: 50px;
     border-radius: 50px;
     border: 1px solid black;
-    background-image: url(../imagenes/facebook.png);
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
+    background: {
+        image: url(../imagenes/facebook.png);
+        position: center;
+        size: 40%;
+        repeat: no-repeat;
+    }
     margin: 1rem;
     &:hover{background-color: white;
     filter: invert(1)}
@@ -209,12 +185,10 @@ footer{
     &:nth-child(3){background-image: url(../imagenes/youtube.png);}
 
     .copyright{
-        color: blueviolet;
+        color: $primario;
         text-align: center;
     }
 }
-
-
 
 form{
     width: 300px;
@@ -246,10 +220,10 @@ form{
     }
 
     #Boton{
-        background:blueviolet;
+        background: $primario;
     color: white;
     padding: 20px;
-    &:hover{background-color: rgb(75, 25, 122);}
+    &:hover{background-color: $colorclick;}
 
     }
     
@@ -283,8 +257,7 @@ form{
         max-width: 600px;
         text-align: initial;
         padding-left: 30px;
-        display: flex;
-        flex-direction: column;
+        @include flex;
         justify-content: center;
     }
 
@@ -312,7 +285,7 @@ form{
     }
 
     #nuestros-cursos .carta{
-        padding: 50px;
+        padding: 40px;
     }
 
 
@@ -366,9 +339,9 @@ form{
     }
 
     #Boton{
-    background:blueviolet;
+    background: $primario;
     color: white;
     padding: 20px;
-    &:hover{background-color: rgb(75, 25, 122);}
+    &:hover{background-color: $colorclick;}
     }
 }
